@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Add this inside the body selector */
+background: url('https://img.freepik.com/free-photo/high-angle-plant-notebook-frame_23-2148785012.jpg?ga=GA1.2.590479862.1714108727&semt=ais_hybrid') no-repeat center center fixed;
+background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    
+}
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5),
+                0 0 60px rgba(255, 255, 255, 0.3),
+                0 0 100px rgba(255, 255, 255, 0.2);
+    width: 450px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.container::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 80%;
+    height: 40px;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 80%);
+    transform: translateX(-50%);
+    opacity: 0.6;
+}
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    color: #444;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button {
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+    background: linear-gradient(135deg, #5f61f3, #4f80ea);
+}
+button:hover {
+    background: linear-gradient(135deg, #55e16f, #064b24);
+}
